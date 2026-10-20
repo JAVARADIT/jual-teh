@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teh java</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🍵 Teh java</h1>
+      <p>Segarnya Teh Berkualitas dengan Harga Bersahabat</p>
+    </header>
+
+    <section class="menu">
+      <div class="card">
+        <img src="img/041dbf20cf849d34ad058f8af36b8bf9.jpg" alt="Teh Manis" />
+        <h2>Teh Manis</h2>
+        <p>Rp3.500</p>
+        <button onclick="beli('Teh Manis', 3500)">Beli</button>
+      </div>
+
+      <div class="card">
+        <img src="img/652fcf5eb1b28.jpg" alt="Teh Tarik" />
+
+        <h2>Teh Tarik</h2>
+        <p>Rp8.000</p>
+        <button onclick="beli('Teh Tarik', 8000)">Beli</button>
+      </div>
+
+      <div class="card">
+        <img src="img/glass-of-ice-lemon-tea-photo.jpg" alt="Lemon Tea" />
+        <h2>Lemon Tea</h2>
+        <p>Rp7.500</p>
+        <button onclick="beli('Lemon Tea', 7500)">Beli</button>
+      </div>
+
+      <div class="card">
+        <img src="img/istockphoto-512167076-612x612.jpg" alt="Green Tea" />
+        <h2>Green Tea</h2>
+        <p>Rp12.000</p>
+        <button onclick="beli('Green Tea', 12000)">Beli</button>
+      </div>
+    </section>
+
+    <section class="keranjang">
+      <h2>🛒 Keranjang Belanja</h2>
+      <ul id="listBelanja"></ul>
+      <h3>Total : <span id="total">Rp0</span></h3>
+      <button class="reset" onclick="resetBelanja()">Reset</button>
+    </section>
+
+    <footer>
+      <p>© 2026 Teh java</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
